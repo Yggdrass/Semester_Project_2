@@ -1,0 +1,15 @@
+{
+  "name": "semester_project_2",
+  "version": "0.0.1",
+  "description": "This is my Semester Project 2. A Front End assignment for users to Register, Login, create an entry and bid on others.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Audun Roald <audunroald@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.8.8"
+  }
+}
