@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "Lovelo";
+  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lovelo";
+  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-weight: normal;
+}
+.indexPageBody {
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "Lovelo", arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-weight: normal;
+}
+header {
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.activeNav {
+  color: rgb(77, 234, 163);
+}
+
+#img_logo {
+  max-height: 5rem;
+}
+
+.logout-button {
+  background-color: rgb(149, 131, 235);
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  color: white;
+  text-shadow: 0px 2px 2px black;
+  box-shadow: 0px 3px 6px black;
+  padding: 0.25rem 0.5rem;
+  max-width: 6.5rem;
+}
+
+.navbar {
+  font-family: "Lovelo", arial, sans-serif;
+}
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-weight: normal;
+}
+/*main {
+  border: solid purple 0.3rem;
+}*/
+img {
+  max-width: 5rem;
+}
+
+#createEntryTitle,
+#formFileMultiple,
+textarea {
+  max-width: 600px;
+}
+
+#createEndDate,
+#createStartDate {
+  max-width: 100px;
+}
+
+.createStartDate,
+.createEndDate {
+  padding: 0 3rem 0 0;
+}
+
+.profileCard {
+  color: white;
+  font-family: "Lovelo", arial, sans-serif;
+  max-width: 800px;
+}
+
+.artDescriptionText,
+.profileDescription {
+  max-width: 75ch;
+  line-height: 2rem;
+}
+
+.artPageSubTitle {
+  max-width: 42ch;
+}
+
+.searchListingsInput {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.fa-arrow-right-long,
+.fa-gavel {
+  color: rgb(77, 234, 163);
+}
+
+.fa-magnifying-glass,
+.searchTitle,
+.resetPasswordTitle,
+.fa-calendar-days,
+.ceateEntryContainer {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 3px 3px black;
+}
+
+.button-login,
+.button-register,
+.button-submit,
+.button-close,
+.artEntriesLinkButton,
+.buttonResetPassword,
+.buttonPostEntry {
+  border: 3px solid white;
+  border-radius: 0.4rem;
+  color: white;
+  text-shadow: 2px 4px 4px black;
+  padding: 0.3rem 1.2rem;
+  max-width: 15rem;
+  text-transform: uppercase;
+}
+
+.button-login,
+.button-register,
+.button-submit,
+.artEntriesLinkButton,
+.buttonResetPassword,
+.buttonPostEntry {
+  background-color: rgb(77, 234, 163);
+}
+
+.button-login,
+.button-register,
+.artEntriesLinkButton,
+.buttonResetPassword,
+.buttonPostEntry {
+  box-shadow: 2px 4px 5px rgb(235, 219, 103);
+}
+
+.button-login,
+.button-register,
+.artEntriesLinkButton {
+  font-size: 2.5rem;
+}
+
+.buttonResetPassword,
+.createEntryTitle,
+.buttonPostEntry {
+  font-size: 1.8rem;
+}
+
+.button-submit {
+  box-shadow: 2px 4px 5px rgb(128, 128, 128);
+  font-size: 1.6rem;
+}
+
+.button-close {
+  background-color: rgb(149, 131, 235);
+  box-shadow: 2px 4px 5px rgb(128, 128, 128);
+  font-size: 1.6rem;
+}
+
+.homePageHeroImage {
+  max-height: 493px;
+}
+
+.homePageHeroBox,
+.artListingsContainer,
+.ceateEntryContainer {
+  background-color: rgb(149, 131, 235);
+}
+
+.homePageSubTitle {
+  font-size: 1.5rem;
+  font-family: sans-serif, Helvetica, Arial;
+  font-weight: bold;
+  margin: 2rem auto;
+}
+
+.artListingsContainer,
+.ceateEntryContainer {
+  max-width: 1000px;
+}
+
+.homePageTitle,
+.createEntryTitle,
+.navbar {
+  font-family: "Lovelo", arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.homePageTitle {
+  font-size: 3rem;
+  background-color: rgb(211, 211, 211);
+}
+
+.homePageBrowseTitle {
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.listedArtCard {
+  background-color: white;
+  border: rgb(235, 219, 103);
+  max-width: 600px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+i {
+  font-size: 3rem;
+  color: white;
+}
+
+html {
+  height: 100%;
+}
+
+/*.container {
+  border: solid red 1px;
+}*/
+/*.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  border: solid yellow 2px;
+}*/
+.modal {
+  background-color: rgba(148, 131, 235, 0.6039215686);
+}
+
+.modal-body {
+  background-color: #c4c4c4;
+}
+
+.modal,
+.modal-body {
+  border: solid white 1rem;
+  font-family: "Lovelo", arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */

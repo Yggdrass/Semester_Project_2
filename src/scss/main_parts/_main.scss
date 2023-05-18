@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Lovelo";
+  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-weight: normal;
+}
+
+$font-main: "Lovelo", arial, sans-serif;
+
+/*main {
+  border: solid purple 0.3rem;
+}*/
+
+img {
+  max-width: 5rem;
+}
+
+#createEntryTitle,
+#formFileMultiple,
+textarea {
+  max-width: 600px;
+}
+
+#createEndDate,
+#createStartDate {
+  max-width: 100px;
+}
+
+.createStartDate,
+.createEndDate {
+  padding: 0 3rem 0 0;
+}
+
+.profileCard {
+  color: white;
+  font-family: $font-main;
+  max-width: 800px;
+}
+
+.artDescriptionText,
+.profileDescription {
+  max-width: 75ch;
+  line-height: 2rem;
+}
+
+.artPageSubTitle {
+  max-width: 42ch;
+}
+
+.searchListingsInput {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.fa-arrow-right-long,
+.fa-gavel {
+  color: rgb(77, 234, 163);
+}
+
+.fa-magnifying-glass,
+.searchTitle,
+.resetPasswordTitle,
+.fa-calendar-days,
+.ceateEntryContainer {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 3px 3px black;
+}
+
+.button-login,
+.button-register,
+.button-submit,
+.button-close,
+.artEntriesLinkButton,
+.buttonResetPassword,
+.buttonPostEntry {
+  border: 3px solid white;
+  border-radius: 0.4rem;
+  color: white;
+  text-shadow: 2px 4px 4px black;
+  padding: 0.3rem 1.2rem;
+  max-width: 15rem;
+  text-transform: uppercase;
+}
+
+.button-login,
+.button-register,
+.button-submit,
+.artEntriesLinkButton,
+.buttonResetPassword,
+.buttonPostEntry {
+  background-color: rgb(77, 234, 163);
+}
+
+.button-login,
+.button-register,
+.artEntriesLinkButton,
+.buttonResetPassword,
+.buttonPostEntry {
+  box-shadow: 2px 4px 5px rgb(235, 219, 103);
+}
+
+.button-login,
+.button-register,
+.artEntriesLinkButton {
+  font-size: 2.5rem;
+}
+.buttonResetPassword,
+.createEntryTitle,
+.buttonPostEntry {
+  font-size: 1.8rem;
+}
+.button-submit {
+  box-shadow: 2px 4px 5px rgb(128, 128, 128);
+  font-size: 1.6rem;
+}
+.button-close {
+  background-color: rgb(149, 131, 235);
+  box-shadow: 2px 4px 5px rgb(128, 128, 128);
+  font-size: 1.6rem;
+}
+
+.homePageHeroImage {
+  max-height: 493px;
+}
+
+.homePageHeroBox,
+.artListingsContainer,
+.ceateEntryContainer {
+  background-color: rgb(149, 131, 235);
+}
+
+.homePageSubTitle {
+  font-size: 1.5rem;
+  font-family: sans-serif, Helvetica, Arial;
+  font-weight: bold;
+  margin: 2rem auto;
+}
+
+.artListingsContainer,
+.ceateEntryContainer {
+  max-width: 1000px;
+}
+
+.homePageTitle,
+.createEntryTitle,
+.navbar {
+  //color: black;
+  font-family: $font-main;
+  text-transform: uppercase;
+}
+
+.homePageTitle {
+  font-size: 3rem;
+  background-color: rgb(211, 211, 211);
+}
+
+.homePageBrowseTitle {
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.listedArtCard {
+  background-color: white;
+  border: rgb(235, 219, 103);
+  max-width: 600px;
+}
