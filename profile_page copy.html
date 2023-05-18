@@ -43,6 +43,7 @@
               src="/src/images/company_logo_white_black.png"
               width="60"
               height="60"
+              alt="logo"
             />
             <h2 class="m-0">ART AUCTIONS</h2>
           </a>
@@ -82,7 +83,6 @@
             <button
               class="logout-button col-4"
               type="button"
-              aria-controls="logout"
               aria-label="Log out"
               data-visible="loggedIn"
               data-auth="logout"
@@ -238,7 +238,7 @@
                   >
                   <textarea
                     class="form-control"
-                    id="createEntryTitle"
+                    id="createEntryDescription"
                     rows="3"
                     placeholder="Write a description of the entry"
                   ></textarea>
@@ -265,15 +265,24 @@
             src="/src/images/company_logo_black_white.png"
             width="60"
             height="60"
+            alt="logo"
           />
-          <h2 class="m-0" style="color: white">ART AUCTIONS</h2>
+          <h2 class="h2_footer m-0">ART AUCTIONS</h2>
         </a>
 
         <div class="col-6 d-flex justify-content-md-end">
-          <a href="#"><i class="fa-brands fa-facebook px-4"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram px-4"></i></a>
-          <a href="#"><i class="fa-brands fa-pinterest px-4"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter px-4"></i></a>
+          <a href="#" aria-label="Link to our Facebook Page"
+            ><i class="fa-brands fa-facebook px-4"></i
+          ></a>
+          <a href="#" aria-label="Link to our Instagram Page"
+            ><i class="fa-brands fa-instagram px-4"></i
+          ></a>
+          <a href="#" aria-label="Link to our Pinterest Page"
+            ><i class="fa-brands fa-pinterest px-4"></i
+          ></a>
+          <a href="#" aria-label="Link to our Twitter Page"
+            ><i class="fa-brands fa-twitter px-4"></i
+          ></a>
         </div>
       </div>
     </footer>
