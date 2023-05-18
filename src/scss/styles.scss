@@ -1,0 +1,44 @@
+@import "font/font";
+@import "main_parts/body";
+@import "main_parts/header";
+@import "main_parts/main";
+@import "main_parts/footer";
+
+html {
+  height: 100%;
+  //border: solid yellow 0.5rem;
+}
+
+/*.container {
+  border: solid red 1px;
+}*/
+
+/*.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  border: solid yellow 2px;
+}*/
+
+.modal {
+  background-color: #9483eb9a;
+}
+
+.modal-body {
+  background-color: #c4c4c4;
+}
+
+.modal,
+.modal-body {
+  border: solid white 1rem;
+  font-family: $font-main;
+  text-transform: uppercase;
+}
