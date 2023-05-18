@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b20f5915ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <title>Art Auction | Art Entries</title>
+  </head>
+  <body class="d-flex-column" data-visible="loggedIn">
+    <!--HEADER-->
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light d-flex justify-items-center p-0"
+      >
+        <div
+          class="container p-0 d-flex align-items-center justify-content-md-center"
+        >
+          <!-- Company logo & name -->
+          <a
+            href="/index.html"
+            class="navbar-brand col-4 m-0 p-0 d-flex align-items-center"
+            ><img
+              src="/src/images/company_logo_white_black.png"
+              width="60"
+              height="60"
+            />
+            <h2 class="m-0">ART AUCTIONS</h2>
+          </a>
+
+          <!-- Navbar -->
+          <div
+            class="collapse navbar-collapse col-4 d-flex justify-content-md-center h4 m-0 p-0"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/home.html" class="nav-link">HOME</a>
+              </li>
+              <li class="nav-item" data-visible="loggedIn">
+                <a href="/entries_page.html" class="nav-link activeNav">ART</a>
+              </li>
+              <li class="nav-item" data-visible="loggedIn">
+                <a href="/profile_page.html" class="nav-link">PROFILE</a>
+                <!-- Remove or hide this for non-registered users -->
+              </li>
+            </ul>
+          </div>
+
+          <!-- Logout button -->
+          <div class="col-4 d-flex justify-content-md-end m-0 p-0">
+            <!-- Remove or hide this for non-registered users -->
+            <button
+              class="logout-button col-4"
+              type="button"
+              aria-controls="logout"
+              aria-label="Log out"
+              data-visible="loggedIn"
+              data-auth="logout"
+            >
+              <span> LOGOUT</span>
+            </button>
+          </div>
+
+          <!-- Hamburger menu for small screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-target="#navbarNav"
+            data-bs-toggle="collapse"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="homePageMain my-5">
+      <!-- Main content -->
+
+      <!-- Page Title -->
+      <div class="d-flex-column text-center">
+        <h1 class="homePageTitle py-1">art listings</h1>
+      </div>
+
+      <!-- Page SubTitle -->
+      <div
+        class="container d-flex align-items-center justify-content-md-around"
+      >
+        <h2 class="artPageSubTitle text-center">
+          bid on others entries by clicking the green hammer down in the bottom
+          right of your chosen entry.
+        </h2>
+      </div>
+
+      <!-- Art Listings Container -->
+      <div class="artListingsContainer d-flex-column mx-auto mt-3">
+        <!-- Search Bar -->
+        <div
+          class="searchListings d-flex py-5 mt-3 align-items-center justify-content-md-center"
+        >
+          <h3 class="searchTitle m-0">Search for Art</h3>
+          <i class="fa-solid fa-magnifying-glass mx-4"></i>
+          <input type="text" class="searchListingsInput p-1 ml-2" />
+        </div>
+
+        <!-- Art Listing Card -->
+        <div class="listedArtCard mx-auto mb-5">
+          <div class="container px-4 py-3">
+            <!-- Image Showcase -->
+            <div class="row pb-3">
+              <div class="col-4">
+                <img
+                  src="/src/images/company_logo_black_white.png"
+                  alt="imageCarousel"
+                />
+              </div>
+
+              <!-- Card Info -->
+              <div class="col-8">
+                <h5 class="artTitle">Title: Title Goes Here</h5>
+                <h5 class="artId">ID: Art ID</h5>
+                <h5 class="artCreated">Created: Date here</h5>
+                <h5 class="artEnds">Ends: End Date Here</h5>
+              </div>
+            </div>
+
+            <!-- Card Description -->
+            <div class="row">
+              <h5 class="artDescriptionTitle">Description</h5>
+              <p class="artDescriptionText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                porttitor ullamcorper tempus. Vestibulum volutpat gravida justo,
+                non hendrerit ligula feugiat nec. Aenean tortor turpis,
+                tincidunt vitae orci ac, vehicula euismod nisi. Proin sagittis,
+                est in viverra rutrum, orci sapien vulputate magna, quis
+                tincidunt dui lacus sed eros. Morbi vitae metus ac diam
+                tristique dignissim.
+              </p>
+            </div>
+
+            <!-- Interaction Icons On Entry -->
+            <div class="px-3 d-flex justify-content-md-end">
+              <i class="fa-solid fa-gavel d-flex-row"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="listedArtCard mx-auto">
+          <div class="container px-4 py-3">
+            <!-- Image Showcase -->
+            <div class="row pb-3">
+              <div class="col-4">
+                <img
+                  src="/src/images/company_logo_black_white.png"
+                  alt="imageCarousel"
+                />
+              </div>
+
+              <!-- Card Info -->
+              <div class="col-8">
+                <h5 class="artTitle">Title: Title Goes Here</h5>
+                <h5 class="artId">ID: Art ID</h5>
+                <h5 class="artCreated">Created: Date here</h5>
+                <h5 class="artEnds">Ends: End Date Here</h5>
+              </div>
+            </div>
+
+            <!-- Card Description -->
+            <div class="row">
+              <h5 class="artDescriptionTitle">Description</h5>
+              <p class="artDescriptionText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                porttitor ullamcorper tempus. Vestibulum volutpat gravida justo,
+                non hendrerit ligula feugiat nec. Aenean tortor turpis,
+                tincidunt vitae orci ac, vehicula euismod nisi. Proin sagittis,
+                est in viverra rutrum, orci sapien vulputate magna, quis
+                tincidunt dui lacus sed eros. Morbi vitae metus ac diam
+                tristique dignissim.
+              </p>
+            </div>
+
+            <!-- Interaction Icons On Entry -->
+            <div class="row">
+              <i class="fa-solid fa-gavel d-flex-row"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="p-0">
+      <div class="container d-flex p-0 align-items-center">
+        <!-- Logo & social media links -->
+        <a href="#" class="navbar-brand col-6 m-0 p-0 d-flex align-items-center"
+          ><img
+            src="/src/images/company_logo_black_white.png"
+            width="60"
+            height="60"
+          />
+          <h2 class="m-0" style="color: white">ART AUCTIONS</h2>
+        </a>
+
+        <div class="col-6 d-flex justify-content-md-end">
+          <a href="#"><i class="fa-brands fa-facebook px-4"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram px-4"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest px-4"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter px-4"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
