@@ -19,6 +19,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/js/index.js" defer type="module"></script>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -128,24 +129,30 @@
                 <div class="modal-body">
                   <!-- Login Form -->
                   <form id="loginForm">
-                    <div class="mb-3">
-                      <label for="loginEmail" class="form-label">Email</label>
+                    <div class="form-floating mb-3">
                       <input
+                        required
                         type="email"
                         class="form-control"
                         id="loginEmail"
-                        aria-describedby="emailHelp"
+                        name="email"
+                        pattern="[\w\-.]+@(stud.)?noroff.no$"
+                        title="Only Noroff student or teacher emails are valid."
+                        placeholder="name@example.com"
                       />
+                      <label for="loginEmail">Email address</label>
                     </div>
-                    <div class="my-3">
-                      <label for="loginPassword" class="form-label"
-                        >Password</label
-                      >
+                    <div class="form-floating mb-3">
                       <input
+                        required
                         type="password"
+                        minlength="8"
                         class="form-control"
                         id="loginPassword"
+                        name="password"
+                        placeholder="Password"
                       />
+                      <label for="loginPassword">Password</label>
                     </div>
 
                     <button type="submit" class="button-submit">login</button>
@@ -177,7 +184,7 @@
             register
           </button>
 
-          <!-- Login Modal -->
+          <!-- Register Modal -->
           <div
             class="modal fade"
             id="registerModal"
@@ -201,26 +208,52 @@
                 <div class="modal-body">
                   <!-- Login Form -->
                   <form id="registerForm">
-                    <div class="mb-3">
-                      <label for="registerEmail" class="form-label"
-                        >Email</label
-                      >
+                    <div class="form-floating mb-3">
                       <input
+                        required
+                        type="text"
+                        class="form-control"
+                        id="registerName"
+                        name="name"
+                        placeholder="name@example.com"
+                      />
+                      <label for="registerName">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        required
                         type="email"
                         class="form-control"
                         id="registerEmail"
-                        aria-describedby="emailHelp"
+                        name="email"
+                        pattern="[\w\-.]+@(stud.)?noroff.no$"
+                        title="Only Noroff student or teacher emails are valid."
+                        placeholder="name@example.com"
                       />
+                      <label for="registerEmail">Email address</label>
                     </div>
-                    <div class="my-3">
-                      <label for="registerPassword" class="form-label"
-                        >Password</label
-                      >
+                    <div class="form-floating mb-3">
                       <input
+                        required
                         type="password"
+                        minlength="8"
                         class="form-control"
                         id="registerPassword"
+                        name="password"
+                        placeholder="Password"
                       />
+                      <label for="registerPassword">Password</label>
+                    </div>
+                    <div class="form-floating">
+                      <input
+                        required
+                        type="url"
+                        class="form-control"
+                        id="registerAvatar"
+                        name="avatar"
+                        placeholder="Avatar URL"
+                      />
+                      <label for="registerAvatar">Avatar URL</label>
                     </div>
 
                     <button type="submit" class="button-submit">
