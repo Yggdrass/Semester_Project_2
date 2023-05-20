@@ -4,11 +4,11 @@ import { createEntry } from "../../api/entry/entry_create.js";
 //import { load } from "../storage/load.js";
 
 const createEntryURL = `${API_CREATE_ENTRY_URL}`;
-console.log("createEntryURL :", createEntryURL);
+//console.log("createEntryURL :", createEntryURL);
 
 export async function createEntryListener() {
   const createEntryForm = document.querySelector("#createEntry");
-  console.log("Create Entry Form :", createEntryForm);
+  //console.log("Create Entry Form :", createEntryForm);
 
   if (createEntryForm) {
     createEntryForm.addEventListener("submit", (event) => {
@@ -21,7 +21,7 @@ export async function createEntryListener() {
       // Sends to the API
       loginUser(createEntryURL, entryToCreate);
       createEntry();
-      console.log(createEntry);
+      console.log("Function :", createEntry);
     });
   }
 }

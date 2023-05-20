@@ -1,10 +1,8 @@
 import { loginUser } from "../../api/auth/login.js";
 import { API_LOGIN_URL } from "../../api/apiUrls.js";
-import { fetchProfile } from "../../pages/fetch_profile.js";
-//import { load } from "../storage/load.js";
 
 const loginURL = `${API_LOGIN_URL}`;
-//console.log("loginUrl :", loginURL);
+console.log("loginUrl :", loginURL);
 
 export async function loginFormListener() {
   const loginForm = document.querySelector("#loginForm");
@@ -19,14 +17,8 @@ export async function loginFormListener() {
 
       // Sends to the API
       loginUser(loginURL, userToLogin);
-      fetchProfile();
-      console.log(fetchProfile);
-
-      location.href = `./profile_page.html?view=profile&name=${userToLogin.name}`;
     });
   }
 }
 
 loginFormListener();
-
-//const name = load("profile.name");
