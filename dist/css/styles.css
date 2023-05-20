@@ -64,7 +64,7 @@ img {
   max-width: 5rem;
 }
 
-#createEntryTitle,
+#createEntryCardTitle,
 #formFileMultiple,
 textarea {
   max-width: 600px;
@@ -73,6 +73,10 @@ textarea {
 #createEndDate,
 #createStartDate {
   max-width: 100px;
+}
+
+.h1_middle_text {
+  color: white;
 }
 
 .createStartDate,
@@ -227,6 +231,10 @@ footer {
 
 i {
   font-size: 3rem;
+  color: white;
+}
+
+.h2_footer {
   color: white;
 }
 
