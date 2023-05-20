@@ -1,3 +1,5 @@
+//import { loginUser } from "./login";
+
 export async function registerUser(url, userData) {
   console.log(
     "registerUser() Url :",
@@ -21,6 +23,7 @@ export async function registerUser(url, userData) {
     console.log("registerUser() Result :", result);
     if (response.ok) {
       alert("You have successfully registered with our website!");
+      //loginUser();
     } else {
       alert("Error! Registration failed!");
     }

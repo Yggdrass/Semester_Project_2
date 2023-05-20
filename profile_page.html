@@ -69,7 +69,7 @@
               <li class="nav-item">
                 <a
                   href="/profile_page.html"
-                  class="nav-link activeNav"
+                  class="nav-link nav-profile activeNav"
                   data-visible="loggedIn"
                   >PROFILE</a
                 >
@@ -115,27 +115,36 @@
       <div id="profile-container"></div>
 
       <!-- Update Avatar -->
-      <div>
-        <form id="updateAvatarForm" method="put">
-          <div class="form-floating">
-            <input
-              required
-              type="url"
-              class="form-control"
-              id="avatar"
-              name="updateAvatar"
-              placeholder="Avatar URL"
-            />
-            <label for="avatar">Avatar URL</label>
-          </div>
-          <button class="button buttonUpdateAvatar" type="submit">
-            update avatar
-          </button>
-        </form>
+      <div
+        id="updateAvatar-container"
+        class="artListingsContainer"
+        method="put"
+      >
+        <div>
+          <form id="updateAvatarForm" method="put">
+            <div class="form-floating">
+              <input
+                required
+                type="url"
+                class="form-control"
+                id="avatar"
+                name="updateAvatar"
+                placeholder="Avatar URL"
+              />
+              <label for="avatar">Avatar URL</label>
+            </div>
+            <button class="button buttonUpdateAvatar" type="submit">
+              update avatar
+            </button>
+          </form>
+        </div>
       </div>
 
       <!-- Create Entry Container -->
-      <div id="ceateEntryContainer" class="d-flex-column mx-auto mt-3"></div>
+      <div
+        id="createEntryForm-container"
+        class="d-flex-column mx-auto mt-3"
+      ></div>
     </main>
 
     <footer class="p-0">
@@ -167,6 +176,5 @@
         </div>
       </div>
     </footer>
-    <link rel="stylesheet" href="dist/css/styles.css" />
   </body>
 </html>

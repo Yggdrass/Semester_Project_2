@@ -1,12 +1,19 @@
-import { logout } from "../../api/auth/index_api_auth.js";
-import { updateLoginVisibility } from "../../pages/loginVisibility.js";
+import { logout } from "../../api/auth/logout.js";
+//import { updateLoginVisibility } from "../../ui/auth.js";
 
 export function logoutListener() {
+  const logoutButton = document.querySelector(".logout-button");
+
   try {
-    logout();
-    updateLoginVisibility();
-    location.href = "./";
-  } catch {
-    return alert("There was a problem logging out");
+    logoutButton.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      // Sends to the API
+      logout();
+    });
+  } catch (error) {
+    console.log(error);
   }
 }
+
+logoutListener();

@@ -19,7 +19,12 @@ header {
   max-height: 5rem;
 }
 
+.nav-profile {
+  display: block;
+}
+
 .logout-button {
+  display: block;
   background-color: rgb(149, 131, 235);
   border: 1px solid white;
   border-radius: 0.4rem;
