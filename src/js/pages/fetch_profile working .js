@@ -2,24 +2,16 @@ import { load } from "../storage/load.js";
 import { API_SINGLE_PROFILE_URL } from "../api/apiUrls.js";
 
 const profile = load("profile");
-//console.log("User Profile :", profile);
+console.log(profile);
 
 const name = profile.name;
-//console.log("Profile Name :", profile.name);
+console.log(name);
 
 const profileUrl = `${API_SINGLE_PROFILE_URL}` + name;
-//console.log("fetchProfile URL:", profileUrl);
+console.log("fetchProfile URL:", profileUrl);
 
 const profilePageContainer = document.getElementById("profile-container");
 //console.log(profilePageContainer);
-
-//const updateAvatarFormContainer = document.getElementById(
-//  "updateAvatar-container"
-//);
-//console.log(updateAvatarFormContainer);
-
-const entryFormContainer = document.getElementById("createEntryForm-container");
-//console.log(entryFormContainer);
 
 const token = localStorage.getItem("accessToken");
 //console.log("AccessToken :", token);
@@ -37,25 +29,19 @@ export async function fetchProfile() {
 
     const response = await fetch(profileUrl, getData);
     //console.log("fetchProfile() Response :", response);
-
     const profile = await response.json();
     //console.log("fetchProfile() profile :", profile);
-
     createProfilePage(profile);
-    //console.log("Function :", fetchProfile);
-
-    //createUpdateAvatar();
-    //console.log("Function :", fetchProfile);
-
-    createEntryForm();
-    //console.log("Function :", createEntryForm);
+    //location.href = `./profile_page.html/?view=profile&name=${profile.name}`;
   } catch (error) {
     console.log(error);
   }
 }
 
 fetchProfile();
+
 //console.log("Function :", fetchProfile);
+//console.log("Profile Name :", profile.name);
 
 export function createProfilePage(profile) {
   profilePageContainer.innerHTML += `<div class="artListingsContainer profileCard mx-auto mb-5">
@@ -102,11 +88,7 @@ export function createProfilePage(profile) {
 </div>
 </div>
 
-`;
-}
 
-export function createEntryForm() {
-  entryFormContainer.innerHTML += `
 <!-- Create Entry Container -->
       <div id="ceateEntryContainer" class="artListingsContainer d-flex-column mx-auto mt-3">
         <!-- Create Entry Card -->
@@ -182,23 +164,4 @@ export function createEntryForm() {
       </div>`;
 }
 
-/*
-export function createUpdateAvatar() {
-  updateAvatarFormContainer.innerHTML += `<form id="updateAvatarForm" method="put">
-  <div class="form-floating">
-    <input
-      required
-      type="url"
-      class="form-control"
-      id="avatar"
-      name="updateAvatar"
-      placeholder="Avatar URL"
-    />
-    <label for="avatar">Avatar URL</label>
-  </div>
-  <button class="button buttonUpdateAvatar" type="submit">
-    update avatar
-  </button>
-</form>`;
-}
-*/
+//console.log("Function :", createProfilePage);

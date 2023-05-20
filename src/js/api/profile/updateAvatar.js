@@ -8,9 +8,9 @@ export const userName = profile.name;
 
 export async function updateAvatar(url, userData) {
   console.log(
-    "registerUser() Url :",
+    "updateAvatar() Url :",
     url,
-    "registerUser() userData :",
+    "updateAvatar() userData :",
     userData
   );
 
@@ -34,11 +34,12 @@ export async function updateAvatar(url, userData) {
     console.log("PostData :", postData);
 
     const response = await fetch(url, postData);
-    console.log("registerUser()) Response :", response);
+    console.log("getItem() Response :", response);
     const result = await response.json();
-    console.log("registerUser() Result :", result);
+    console.log("getItem() Result :", result);
     if (response.ok) {
       alert("You have successfully updated your avatar!");
+      location.reload();
     } else {
       alert("Error! Update failed!");
     }

@@ -1,8 +1,8 @@
 export async function createEntry(url, entryData) {
   console.log(
-    "registerUser() Url :",
+    "createEntry() Url :",
     url,
-    "registerUser() entryData :",
+    "createEntry() entryData :",
     entryData
   );
 
@@ -16,9 +16,9 @@ export async function createEntry(url, entryData) {
     };
 
     const response = await fetch(url, entryData);
-    console.log("createEntry()) Response :", response);
+    //console.log("createEntry()) Response :", response);
     const result = await response.json();
-    console.log("createEntry() Result :", result);
+    //console.log("createEntry() Result :", result);
     if (response.ok) {
       alert("Your entry have successfully been created!");
     } else {
@@ -29,3 +29,6 @@ export async function createEntry(url, entryData) {
     console.log(error);
   }
 }
+
+createEntry();
+//console.log("Function :", createEntry);
