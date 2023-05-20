@@ -75,6 +75,7 @@
               class="logout-button col-4"
               type="button"
               aria-label="Log out"
+              data-visible="loggedIn"
             >
               <span> LOGOUT</span>
             </button>
@@ -106,15 +107,13 @@
             <div class="form-floating mb-3">
               <input
                 required
-                type="email"
+                type="text"
                 class="form-control"
-                id="loginEmail"
-                name="email"
-                pattern="[\w\-.]+@(stud.)?noroff.no$"
-                title="Only Noroff student or teacher emails are valid."
+                id="loginName"
+                name="name"
                 placeholder="name@example.com"
               />
-              <label for="loginEmail">Email address</label>
+              <label for="loginName">Name</label>
             </div>
             <div class="form-floating mb-3">
               <input

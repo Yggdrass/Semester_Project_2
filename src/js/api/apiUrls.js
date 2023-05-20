@@ -27,7 +27,7 @@ export const API_ALL_ENTRIES_URL = `${API_BASE_URL}/auction/listings`; //       
 // - Single Entry:
 export const API_SINGLE_ENTRY_URL = `${API_BASE_URL}/auction/listings/`; //  <+ ID>            Action="GET"
 
-// - reate Entry:
+// - Create Entry:
 export const API_CREATE_ENTRY_URL = `${API_BASE_URL}/auction/listings/`; //                    Action="POST"
 
 // - Update Entry:

@@ -1,14 +1,8 @@
-import { save } from "../../storage/save.js";
-//import { load } from "../../storage/load.js";
-import { fetchProfile } from "../../pages/fetch_profile.js";
-//import { name } from "../../pages/fetch_profile.js";
-//import { fetchProfileUrl } from "../../pages/fetch_profile.js";
-
 export async function loginUser(url, userData) {
   console.log("loginUser() Url :", url, "loginUser() userData :", userData);
   try {
     const postData = {
-      method: "PUT",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
@@ -26,18 +20,6 @@ export async function loginUser(url, userData) {
 
     if (response.ok) {
       alert("You have successfully logged in!");
-      save("profile", result);
-
-      fetchProfile();
-      console.log(fetchProfile);
-
-      location.href = `./profile_page.html?view=profile&name=${result.name}`;
-
-      /*createProfilePage();
-      console.log(createProfilePage);
-      const name = profile.name;
-      console.log("Profile Name", name);
-      location.href = `./profile_page.html?view=profile&name=${profile.name}`;*/
     } else {
       alert("Error! Login failed!");
     }

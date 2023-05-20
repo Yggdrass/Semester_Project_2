@@ -1,4 +1,4 @@
-export async function registerUser(url, userData) {
+export async function updateAvatar(url, userData) {
   console.log(
     "registerUser() Url :",
     url,
@@ -7,22 +7,27 @@ export async function registerUser(url, userData) {
   );
 
   try {
+    const token = localStorage.getItem("accessToken");
+    //console.log("Token Stored :", token);
+
     const postData = {
-      method: "POST",
+      method: "PUT",
       headers: {
-        "Content-Type": "application/json; charset=UTF-8",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(userData),
     };
+    console.log("PostData :", postData);
 
     const response = await fetch(url, postData);
     console.log("registerUser()) Response :", response);
     const result = await response.json();
     console.log("registerUser() Result :", result);
     if (response.ok) {
-      alert("You have successfully registered with our website!");
+      alert("You have successfully updated your avatar!");
     } else {
-      alert("Error! Registration failed!");
+      alert("Error! Update failed!");
     }
     return result;
   } catch (error) {
