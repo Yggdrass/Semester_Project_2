@@ -71,7 +71,12 @@
           <!-- Logout button -->
           <div class="col-4 d-flex justify-content-md-end m-0 p-0">
             <!-- Remove or hide this for non-registered users -->
-            <button class="logout-button col-4" type="button">
+            <button
+              class="logout-button col-4"
+              type="button"
+              data-auth="logout"
+              data-visible="loggedIn"
+            >
               <span> LOGOUT</span>
             </button>
           </div>
@@ -206,7 +211,7 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <!-- Login Form -->
+                  <!-- Register Form -->
                   <form id="registerForm">
                     <div class="form-floating mb-3">
                       <input

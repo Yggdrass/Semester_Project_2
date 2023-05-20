@@ -1,14 +1,13 @@
 import { save } from "../../storage/save.js";
 //import { load } from "../../storage/load.js";
 import { fetchProfile } from "../../pages/fetch_profile.js";
-//import { name } from "../../pages/fetch_profile.js";
-//import { fetchProfileUrl } from "../../pages/fetch_profile.js";
+//import { createProfilePage } from "../../pages/fetch_profile.js";
 
 export async function loginUser(url, userData) {
   console.log("loginUser() Url :", url, "loginUser() userData :", userData);
   try {
     const postData = {
-      method: "PUT",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },

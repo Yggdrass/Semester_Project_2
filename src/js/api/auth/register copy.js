@@ -10,7 +10,7 @@ export async function registerUser(url, userData) {
     const postData = {
       method: "POST",
       headers: {
-        "Content-Type": "application/json; charset=UTF-8",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(userData),
     };
