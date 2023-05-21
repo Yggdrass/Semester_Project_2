@@ -14,24 +14,6 @@ export async function fetchAllEntries() {
   let results = await response.json();
   console.log("Response Json :", results);
 
-  search.onkeyup = function () {
-    console.log("On Key :", event);
-
-    const searchValue = event.target.value.trim().toLowerCase();
-
-    const filteredEntries = results.filter(function (entry) {
-      if (entry.title.toString().toLowerCase().startsWith(searchValue)) {
-        return;
-      }
-    });
-
-    console.log("Filtered Entries :", filteredEntries);
-
-    results = filteredEntries;
-
-    fetchAllEntries();
-  };
-
   results.forEach(function (entry) {
     entriesContainer.innerHTML += ` <!-- Art Listing Card -->
     <div class="listedArtCard mx-auto mb-5">
@@ -80,6 +62,24 @@ export async function fetchAllEntries() {
 
 fetchAllEntries();
 console.log("Function", fetchAllEntries);
+
+/* search.onkeyup = function () {
+  console.log("On Key :", event);
+
+  const searchValue = event.target.value.trim().toLowerCase();
+
+  const filteredEntries = results.filter(function (entry) {
+    if (entry.title.toString().toLowerCase().startsWith(searchValue)) {
+      return;
+    }
+  });
+
+  console.log("Filtered Entries :", filteredEntries);
+
+  results = filteredEntries;
+
+  fetchAllEntries();
+}; */
 
 //entriesContainer.innerHTML += "";
 
