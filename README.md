@@ -93,4 +93,16 @@ We used this API provided from the school.
 
 # Process
 
+First i needed to establish the target audience, the type of auction site and from there decide on the design for the logo, colours etc, so that they would meet the target audience.
+I started first to design a style guide and a protype in adobe XD. I chose to target people in the ages 25-45 that likes quite modern and expressive art. There fore I decided to go for a minimalistic wbsite that made the user focus quickly and make it easier for them to create a profile, login and create or bid on an entry as quick as possible. 
+The coolours I chose where purple, white, black, with yellow and light green as contrast colours. On the front page I made use of an image depicting art that the target audeince will like and lots of white space so the register and login buttons are easy to spot and get the users attention. Alot of modern art and design use white and black, they are also timeless. The purple signals wealth and exclusivety. The green I used on the buttons as they stand out from the website and will be easy to spot.
+In the choosing of colours I made sure that the colours follow WCAG and are apporvedfor the colourblind.
 
+I have had alot of things happening in my life and I suffer from exaustion from my previous workplace. In addition to that the personal life has its toll and make it tough to get everything done in time. Also I am very new to coding so I tend to use alot of time fixing issues that may not be so timeconsuming but they are hard for me to spot, so therefore I use alot of time learning what I have done wrong and fixing them.
+
+There are some items in this assignment that I wasnt able to fix in time. They are creating and Entry, searching through entries if not registered and the bidding on entries. I have created the function that calls and displays an array of all entries on the Art-page, but it is not possible to search through them. In the corresponding JS file there is a onkey up event that I trid to use in order to make a search. In that I can log that the keys are ppressed but it wont let me loop through the array and display the entries with a title that correspod to the searchbar.
+I created a function that makes it possible for a logged in user to type in info and create an entry, but I'm not sure if it gets created as I can't serach for it. But the user gets a message that it is created.
+
+
+As a small note in the end:
+I have not been able to use Ghantchart as much, since it is both new to me and I prefer o use the Trello board instead. Because of my health I have been focusing on using the time to finish the project using the Trello board and there fore I have forgot to use ghantt chart. I will instead set up the chart to display what I would do if I used it.
