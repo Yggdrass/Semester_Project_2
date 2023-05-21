@@ -3,6 +3,8 @@
 main {
   //border: solid purple 0.3rem;
   min-height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 img {
@@ -288,7 +290,7 @@ textarea,
 @media (min-width: 1500px) and (orientation: landscape) {
   main {
     margin: 2rem auto;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .hero-image {
