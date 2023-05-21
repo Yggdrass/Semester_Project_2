@@ -149,11 +149,25 @@ export function createEntryForm() {
 
 
                 <!-- Entry End Date -->
+
                 <form class="col-6">
                   <label for="date" class="col-1 col-form-label">Date</label>
                   <div class="col-5">
                     <div class="input-group date" id="datepicker">
                       <input type="date" class="form-control" id="date"/>  
+
+
+                <form class="row">
+                  <label for="date" class="col-1 col-form-label">Date</label>
+                  <div class="col-5">
+                    <div class="input-group date" id="datepicker">
+                      <input type="date" class="form-control" id="date"/>
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+
                     </div>
                   </div>
                 </form>

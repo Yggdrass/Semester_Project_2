@@ -21,3 +21,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-weight: normal;
+}
+
+$font-main: "Lovelo", arial, sans-serif;
+

@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../../.."
+	},
+	{
+		"path": "../../../../Semester_Proj_2/.vscode"
+	},
+	{
+		"path": "../../../../Semester_Proj_2/.github"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Semester_Project_2"
+  }
+}

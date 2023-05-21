@@ -19,6 +19,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/js/index.js" defer type="module"></script>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -115,6 +116,26 @@
           bid on others entries by clicking the green hammer down in the bottom
           right of your chosen entry.
         </h2>
+      </div>
+
+      <!-- Search Bar -->
+      <div
+        class="artListingsContainer searchListings d-flex py-5 mt-3 align-items-center justify-content-md-center"
+        id="searchEntries"
+      >
+        <h3 class="searchTitle m-0">Search for Art</h3>
+        <i class="fa-solid fa-magnifying-glass mx-4"></i>
+        <form class="d-flex">
+          <label for="search-entries"></label>
+          <input
+            class="form-control searchListingsInput p-1 ml-2"
+            id="search-entries"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
       </div>
 
       <!-- Art Listings Container -->

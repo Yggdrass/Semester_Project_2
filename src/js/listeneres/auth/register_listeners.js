@@ -1,4 +1,4 @@
-import { registerUser } from "../../api/index_api.js";
+import { registerUser } from "../../api/auth/register.js";
 import { API_REGISTER_URL } from "../../api/apiUrls.js";
 
 const registerURL = `${API_REGISTER_URL}`;
