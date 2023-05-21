@@ -1,3 +1,9 @@
+/**
+ *
+ * @param {string} url This is where the entryData is sent in order to be created.
+ * @param {*} entryData This is where the url from create_entry_listener.js is inserted.
+ * @returns a success message that the entry has been created.
+ */
 export async function createEntry(url, entryData) {
   console.log(
     "createEntry() Url :",

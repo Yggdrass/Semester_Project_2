@@ -5,6 +5,9 @@ import { createEntry } from "../../api/entry/entry_create.js";
 const createEntryURL = `${API_CREATE_ENTRY_URL}`;
 console.log("createEntryURL :", createEntryURL);
 
+/**
+ * This function gathers the information from a form and passes it to the server as an entry.
+ */
 export async function createEntryListener() {
   const createEntryForm = document.querySelector("#createEntry");
   //console.log("Create Entry Form :", createEntryForm);

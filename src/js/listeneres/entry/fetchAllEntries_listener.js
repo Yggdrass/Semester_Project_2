@@ -9,6 +9,11 @@ console.log("All Entries URL :", allEntriesUrl);
 const search = document.getElementById("searchEntries");
 console.log("Search Bar :", search);
 
+/**
+ * Fetches all entries from the server and displays them on a page.
+ * @param {parameter} results The results in json-form recieved from the call.
+ *
+ */
 export async function fetchAllEntries() {
   const response = await fetch(allEntriesUrl);
   let results = await response.json();
@@ -63,7 +68,12 @@ export async function fetchAllEntries() {
 fetchAllEntries();
 console.log("Function", fetchAllEntries);
 
-/* search.onkeyup = function () {
+/*
+
+  I tried to make this keyup event work to make it possible to search through entries in the searchbar. 
+  I logged the information in console.log but I could not make it possible to change the array and display the entries on the page.
+
+  search.onkeyup = function () {
   console.log("On Key :", event);
 
   const searchValue = event.target.value.trim().toLowerCase();

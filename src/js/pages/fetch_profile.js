@@ -13,16 +13,19 @@ const profileUrl = `${API_SINGLE_PROFILE_URL}` + name;
 const profilePageContainer = document.getElementById("profile-container");
 //console.log(profilePageContainer);
 
-//const updateAvatarFormContainer = document.getElementById(
-//  "updateAvatar-container"
-//);
-//console.log(updateAvatarFormContainer);
-
 const entryFormContainer = document.getElementById("createEntryForm-container");
 //console.log(entryFormContainer);
 
 const token = localStorage.getItem("accessToken");
 //console.log("AccessToken :", token);
+
+/**
+ * Fetches the login information of the user and creates a profilepage and a form to create an entry
+ * @param {token} Accesstoken This is where the accesstoken of the current logged in user will be sent.
+ * @param {profileUrl} ProfileUrl This is the URL that is needed to be called with an async function in order to get the info about the current logged in user.
+ * @param {profilePageContainer} ProfileContainer this where the profile page will be loaded into as inner.HTML.
+ * @param {entryFormContainer} EntryFormContainer this where the create entry form will be loaded into as inner.HTML.
+ */
 
 export async function fetchProfile() {
   try {
@@ -57,6 +60,11 @@ export async function fetchProfile() {
 fetchProfile();
 //console.log("Function :", fetchProfile);
 
+/**
+ * Creates a profilepage with information gathered from the API-call.
+ * @param {parameter} profile The information from the API-call in the function it is placed.
+ */
+
 export function createProfilePage(profile) {
   profilePageContainer.innerHTML += `
 
@@ -68,7 +76,7 @@ export function createProfilePage(profile) {
   
   <div class="artListingsContainer profileCard mx-auto mb-5">
   <div class=" container px-4 py-3 mx-auto">
-    <div class="row pb-3 justify-content-md-center">
+    <div class="row pb-3 profileAttributeContainer justify-content-md-center">
       <!-- Profile Image -->
       <div class="col-4">
         <img
@@ -123,21 +131,25 @@ export function createProfilePage(profile) {
 `;
 }
 
+/**
+ * Creates a form to create an entry. This form will be placed on the div it has a name connected to.
+ */
+
 export function createEntryForm() {
   entryFormContainer.innerHTML += `
 <!-- Create Entry Container -->
       <div id="ceateEntryContainer" class="artListingsContainer d-flex-column mx-auto mt-3">
         <!-- Create Entry Card -->
-        <div class="createEntryCard mx-auto mb-5">
-          <div class="container mx-auto px-4 py-3">
-            <div class="row mx-auto pb-3">
+        <div class="createEntryCard  align-items-center justify-content-center mx-auto mb-5">
+          <div class="container entry-info px-4 py-3">
+            <div class="row pb-3">
               <h3 class="createEntryCardTitle text-center">create entry</h3>
             </div>
 
-            <div class="mx-auto pt-4 col-6 pb-3">
+            <div class="row pb-3">
               <form id="createEntry">
                 <!-- Entry Title -->
-                <div class="mb-3">
+                <div class="col-10 mb-3">
                   <label for="createEntryTitle" class="form-label">Title</label>
                   <input
                     type="text"
@@ -155,26 +167,14 @@ export function createEntryForm() {
                   <div class="col-5">
                     <div class="input-group date" id="datepicker">
                       <input type="date" class="form-control" id="date"/>  
-
-
-                <form class="row">
-                  <label for="date" class="col-1 col-form-label">Date</label>
-                  <div class="col-5">
-                    <div class="input-group date" id="datepicker">
-                      <input type="date" class="form-control" id="date"/>
-                      <span class="input-group-append">
-                        <span class="input-group-text bg-light d-block">
-                          <i class="fa fa-calendar"></i>
-                        </span>
-                      </span>
-
                     </div>
                   </div>
                 </form>
+                  
                 
 
                 <!-- Entry Media Gallery -->
-                <div class="col-6 mb-3 pt-2">
+                <div class="col-10 mb-3 pt-2">
                   <label for="formEntryGallery" class="form-label"
                     >Media gallery</label
                   >
@@ -187,7 +187,7 @@ export function createEntryForm() {
                 </div>
 
                 <!-- Entry Description -->
-                <div class="mb-3 pt-2">
+                <div class="col-10 mb-3 pt-2">
                   <label for="createEntryDescription" class="form-label"
                     >Description</label
                   >
@@ -211,24 +211,3 @@ export function createEntryForm() {
         </div>
       </div>`;
 }
-
-/*
-export function createUpdateAvatar() {
-  updateAvatarFormContainer.innerHTML += `<form id="updateAvatarForm" method="put">
-  <div class="form-floating">
-    <input
-      required
-      type="url"
-      class="form-control"
-      id="avatar"
-      name="updateAvatar"
-      placeholder="Avatar URL"
-    />
-    <label for="avatar">Avatar URL</label>
-  </div>
-  <button class="button buttonUpdateAvatar" type="submit">
-    update avatar
-  </button>
-</form>`;
-}
-*/

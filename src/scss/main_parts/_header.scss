@@ -10,18 +10,6 @@ header {
   color: rgb(77, 234, 163);
 }
 
-#img_logo {
-  max-height: 5rem;
-}
-
-.navbar-collapse {
-  font-family: "Lovelo-Black", arial, sans-serif;
-}
-
-.nav-profile {
-  display: block;
-}
-
 .logout-button {
   display: block;
   background-color: rgb(149, 131, 235);
@@ -35,12 +23,52 @@ header {
   font-family: "Lovelo-Black", arial, sans-serif;
 }
 
+.navbar-collapse {
+  font-family: "Lovelo-Black", arial, sans-serif;
+}
+
+.nav-profile {
+  display: block;
+}
+
 .navbar-brand {
   font-family: "Lovelo-LineBold", arial, sans-serif;
 }
 
-@media (min-width: 30em) and (orientation: portrait) {
+#img_logo {
+  max-height: 5rem;
+}
+
+@media (max-width: 300px) and (orientation: portrait) {
+  .navbar-toggler {
+    display: flex;
+  }
+
   .navbar-collapse {
     display: none;
+  }
+
+  .logout-button {
+    font-size: 1.3rem;
+    padding: 1rem 5rem;
+  }
+
+  .logout-button span {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1500px) and (orientation: portrait) {
+  .navbar-collapse {
+    display: none;
+  }
+
+  .logout-button {
+    font-size: 1.3rem;
+    padding: 1rem 5rem;
+  }
+
+  .logout-button span {
+    margin: 0 auto;
   }
 }

@@ -1,5 +1,11 @@
 import { save } from "../../storage/index_storage.js";
 
+/**
+ * This function logs the user in and sends them to their profile page.
+ * @param {string} url the URL that the function calls in order for the user to be logged in.
+ * @param {array} userData the information gathered from the login form.
+ * @returns
+ */
 export async function loginUser(url, userData) {
   console.log("loginUser() Url :", url, "loginUser() userData :", userData);
   try {

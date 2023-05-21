@@ -3,6 +3,9 @@ import { API_REGISTER_URL } from "../../api/apiUrls.js";
 
 const registerURL = `${API_REGISTER_URL}`;
 
+/**
+ * This form gathers information from a form and passes it into the function registerUser().
+ */
 export function registerFormListener() {
   const registerForm = document.querySelector("#registerForm");
 
