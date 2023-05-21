@@ -5,6 +5,9 @@ footer {
   background-color: black;
   color: white;
   font-family: "Lovelo-LineLight", arial, sans-serif;
+}
+
+.footer-container {
   display: flex;
   flex-direction: row;
 }
@@ -18,9 +21,12 @@ i {
   color: white;
 }
 
-@media (min-width: 500px) and (orientation: portrait) {
-  footer {
-    display: flex;
-    flex-direction: row;
+@media (max-width: 400px) and (orientation: portrait) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .fa-brands {
+    font-size: 2rem;
   }
 }

@@ -5,150 +5,12 @@ main {
   min-height: 100%;
 }
 
-.hero-image {
-  max-width: 75rem;
+img {
+  max-width: 12rem;
 }
-
-.index-title {
-  font-size: 3rem;
-  font-family: "Lovelo-LineLight", arial, sans-serif;
-  color: white;
-  max-width: 100%;
-}
-
-.index-subTitle {
-  font-size: 3rem;
-  font-family: "Lovelo-LineBold", arial, sans-serif;
-  color: white;
-}
-
-#createEntryCardTitle,
-#formFileMultiple,
-textarea {
-  max-width: 600px;
-}
-
-#createEndDate,
-#createStartDate {
-  max-width: 100px;
-}
-
-.h1_middle_text {
-  color: white;
-}
-
-.createStartDate,
-.createEndDate {
-  padding: 0 3rem 0 0;
-}
-
-.profileCard {
-  color: white;
-  font-family: "Lovelo-Black", arial, sans-serif;
-  max-width: 800px;
-}
-
-.artDescriptionText,
-.profileDescription {
-  max-width: 75ch;
-  line-height: 2rem;
-}
-
-.profileAttribute {
-  font-family: arial, sans-serif, "Lovelo-Black";
-  font-size: 1.2rem;
-  padding-left: 1rem;
-}
-
-/* .profileAttribute {
-  max-width: 1rem;
-} */
 
 .artPageSubTitle {
   max-width: 42ch;
-}
-
-.searchListingsInput {
-  max-width: 100%;
-  border-radius: 0.5rem;
-}
-
-.form-floating {
-  max-width: 50rem;
-}
-
-.fa-arrow-right-long,
-.fa-gavel {
-  color: rgb(77, 234, 163);
-}
-
-.fa-arrow-right-long {
-  font-size: 5rem;
-  margin: 0;
-  padding-left: 6rem;
-}
-
-.fa-magnifying-glass,
-.searchTitle,
-.resetPasswordTitle,
-.fa-calendar-days,
-.ceateEntryContainer {
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: white;
-  text-shadow: 2px 3px 3px black;
-}
-
-.button-login,
-.button-register,
-.button-submit,
-.button-close,
-.artEntriesLinkButton,
-.buttonResetPassword,
-.buttonPostEntry,
-.buttonUpdateAvatar {
-  border: 3px solid white;
-  border-radius: 0.4rem;
-  color: white;
-  text-shadow: 2px 4px 4px black;
-  padding: 0.3rem 1.2rem;
-  max-width: 15rem;
-  text-transform: uppercase;
-}
-
-.button-login,
-.button-register,
-.button-submit,
-.artEntriesLinkButton,
-.buttonResetPassword,
-.buttonPostEntry,
-.buttonUpdateAvatar {
-  background-color: rgb(77, 234, 163);
-}
-
-.button-login,
-.button-register,
-.artEntriesLinkButton,
-.buttonResetPassword,
-.buttonPostEntry {
-  box-shadow: 2px 4px 5px rgb(235, 219, 103);
-}
-
-.button-login,
-.button-register,
-.artEntriesLinkButton {
-  font-size: 2.5rem;
-}
-
-.buttonResetPassword,
-.createEntryTitle,
-.buttonPostEntry {
-  font-size: 1.8rem;
-}
-
-.button-submit {
-  box-shadow: 2px 4px 5px rgb(128, 128, 128);
-  font-size: 1.6rem;
 }
 
 .button-close {
@@ -157,14 +19,38 @@ textarea {
   font-size: 1.6rem;
 }
 
-.homePageHeroImage {
-  max-height: 493px;
+.button-submit {
+  box-shadow: 2px 4px 5px rgb(128, 128, 128);
+  font-size: 1.6rem;
 }
 
-.homePageHeroBox,
-.artListingsContainer,
-.ceateEntryContainer {
-  background-color: rgb(149, 131, 235);
+.fa-arrow-right-long {
+  font-size: 5rem;
+  margin: 0;
+  padding-left: 6rem;
+}
+
+.form-floating {
+  max-width: 50rem;
+}
+
+.h1_middle_text {
+  color: white;
+}
+
+.hero-image {
+  max-width: 75rem;
+}
+
+.homePageBrowseTitle {
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.homePageHeroImage {
+  max-height: 493px;
 }
 
 .homePageSubTitle {
@@ -176,28 +62,22 @@ textarea {
   line-height: 2.5rem;
 }
 
-.artListingsContainer,
-.ceateEntryContainer {
-  max-width: 1000px;
-}
-
-.homePageTitle,
-.createEntryTitle {
-  //color: black;
-  font-family: "Lovelo-Black", arial, sans-serif;
-  text-transform: uppercase;
-}
-
 .homePageTitle {
   font-size: 3rem;
   background-color: rgb(211, 211, 211);
 }
 
-.homePageBrowseTitle {
-  font-size: 2.2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
+.index-subTitle {
+  font-size: 3rem;
+  font-family: "Lovelo-LineBold", arial, sans-serif;
+  color: white;
+}
+
+.index-title {
+  font-size: 3rem;
+  font-family: "Lovelo-LineLight", arial, sans-serif;
+  color: white;
+  max-width: 100%;
 }
 
 .listedArtCard {
@@ -206,10 +86,212 @@ textarea {
   max-width: 600px;
 }
 
+.profileAttribute {
+  font-family: arial, sans-serif, "Lovelo-Black";
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.profileCard {
+  color: white;
+  font-family: "Lovelo-Black", arial, sans-serif;
+  max-width: 800px;
+}
+
 .profileDescriptionText {
   font-size: 1.618rem;
 }
 
 .profileDescriptionTitle {
   font-size: 2.618rem;
+}
+
+.searchListingsInput {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.createStartDate,
+.createEndDate {
+  padding: 0 3rem 0 0;
+  max-width: 100px;
+}
+
+textarea,
+#createEntryCardTitle,
+#formFileMultiple {
+  max-width: 600px;
+}
+
+.artDescriptionText,
+.profileDescription {
+  max-width: 75ch;
+  line-height: 2rem;
+}
+
+.fa-arrow-right-long,
+.fa-gavel {
+  color: rgb(77, 234, 163);
+}
+
+.ceateEntryContainer,
+.fa-calendar-days,
+.fa-magnifying-glass,
+.resetPasswordTitle,
+.searchTitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 3px 3px black;
+}
+
+.artEntriesLinkButton,
+.button-login,
+.button-close,
+.button-register,
+.buttonPostEntry,
+.buttonResetPassword,
+.button-submit,
+.buttonUpdateAvatar {
+  border: 3px solid white;
+  border-radius: 0.4rem;
+  color: white;
+  text-shadow: 2px 4px 4px black;
+  padding: 0.3rem 1.2rem;
+  max-width: 15rem;
+  text-transform: uppercase;
+}
+
+.artEntriesLinkButton,
+.button-login,
+.button-register,
+.buttonResetPassword,
+.button-submit,
+.buttonPostEntry,
+.buttonUpdateAvatar {
+  background-color: rgb(77, 234, 163);
+}
+
+.artEntriesLinkButton,
+.button-login,
+.button-register,
+.buttonPostEntry,
+.buttonResetPassword {
+  box-shadow: 2px 4px 5px rgb(235, 219, 103);
+}
+
+.artEntriesLinkButton,
+.button-login,
+.button-register {
+  font-size: 2.5rem;
+}
+
+.buttonPostEntry,
+.buttonResetPassword,
+.createEntryTitle {
+  font-size: 1.8rem;
+}
+
+.artListingsContainer,
+.ceateEntryContainer,
+.homePageHeroBox {
+  background-color: rgb(149, 131, 235);
+}
+
+.artListingsContainer,
+.ceateEntryContainer {
+  max-width: 1000px;
+}
+
+.createEntryTitle,
+.homePageTitle {
+  //color: black;
+  font-family: "Lovelo-Black", arial, sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 400px) and (orientation: portrait) {
+  main {
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    max-width: 27rem;
+  }
+
+  .profileAttribute {
+    font-family: arial, sans-serif, "Lovelo-Black";
+    font-size: 0.8rem;
+  }
+
+  .profileAttributeContainer {
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  main {
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    max-width: 20rem;
+  }
+
+  .profileAttribute {
+    font-family: arial, sans-serif, "Lovelo-Black";
+    font-size: 0.8rem;
+  }
+
+  .profileAttributeContainer {
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+  }
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+  .hero-text {
+    font-size: 0.5rem;
+  }
+
+  .entry-info {
+    max-width: 10ch;
+  }
+
+  main {
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+
+  .profileAttribute {
+    font-family: arial, sans-serif, "Lovelo-Black";
+    font-size: 0.8rem;
+  }
+
+  .profileAttributeContainer {
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1500px) and (orientation: landscape) {
+  main {
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    max-width: 90rem;
+  }
 }

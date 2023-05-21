@@ -1,4 +1,9 @@
-//import { loginUser } from "./login";
+/**
+ * This function register the user on the server, but it currently doesnt automatically execute the function loginUser().
+ * @param {string} url the URL that the function calls in order for the user to be registered.
+ * @param {array} userData the information gathered from the register form.
+ * @returns a message that the user successfully created an account.
+ */
 
 export async function registerUser(url, userData) {
   console.log(

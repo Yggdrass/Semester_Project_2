@@ -4,6 +4,9 @@ import { API_LOGIN_URL } from "../../api/apiUrls.js";
 const loginURL = `${API_LOGIN_URL}`;
 console.log("loginUrl :", loginURL);
 
+/**
+ * This form gathers information from a form and passes it into the function loginUser().
+ */
 export async function loginFormListener() {
   const loginForm = document.querySelector("#loginForm");
 

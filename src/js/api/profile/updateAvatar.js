@@ -6,6 +6,12 @@ const profile = load("profile");
 export const userName = profile.name;
 //console.log("Profile Avatar", avatar);
 
+/**
+ *
+ * @param {string} url This is where the url that the function sends the userData to, in order for the avatar to be updated.
+ * @param {string} userData This is where the url from update_avatar_listener.js is inserted.
+ * @returns a message that the avatar is updated successfully.
+ */
 export async function updateAvatar(url, userData) {
   console.log(
     "updateAvatar() Url :",
