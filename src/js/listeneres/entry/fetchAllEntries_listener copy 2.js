@@ -1,8 +1,4 @@
-
 import { API_ALL_ENTRIES_URL } from "../../api/apiUrls.js";
-
-import { API_ALL_ENTRIES_URL } from "../../api/index_api.js";
-
 
 const entriesContainer = document.getElementById("entries-container");
 console.log("Entries Container :", entriesContainer);
@@ -66,26 +62,6 @@ export async function fetchAllEntries() {
 
 fetchAllEntries();
 console.log("Function", fetchAllEntries);
-
-
-
-/* search.onkeyup = function () {
-  console.log("On Key :", event);
-
-  const searchValue = event.target.value.trim().toLowerCase();
-
-  const filteredEntries = results.filter(function (entry) {
-    if (entry.title.toString().toLowerCase().startsWith(searchValue)) {
-      return;
-    }
-  });
-
-  console.log("Filtered Entries :", filteredEntries);
-
-  results = filteredEntries;
-
-  fetchAllEntries();
-}; */
 
 //entriesContainer.innerHTML += "";
 
