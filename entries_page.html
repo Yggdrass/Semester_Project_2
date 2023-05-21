@@ -24,7 +24,7 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="dist/css/styles.css" />
-    <title>Art Auction | Art Entries</title>
+    <title>Art Auction | Art Entries Project</title>
   </head>
   <body class="d-flex-column" data-visible="loggedIn">
     <!--HEADER-->
@@ -40,7 +40,7 @@
             href="/index.html"
             class="navbar-brand col-4 m-0 p-0 d-flex align-items-center"
             ><img
-              src="/src/images/company_logo_white_black.png"
+              src="/assets/images/company_logo_white_black.png"
               width="60"
               height="60"
               alt="logo"
@@ -119,97 +119,7 @@
 
       <!-- Art Listings Container -->
       <div class="artListingsContainer d-flex-column mx-auto mt-3">
-        <!-- Search Bar -->
-        <div
-          class="searchListings d-flex py-5 mt-3 align-items-center justify-content-md-center"
-        >
-          <h3 class="searchTitle m-0">Search for Art</h3>
-          <i class="fa-solid fa-magnifying-glass mx-4"></i>
-          <input type="text" class="searchListingsInput p-1 ml-2" />
-        </div>
-
-        <!-- Art Listing Card -->
-        <div class="listedArtCard mx-auto mb-5">
-          <div class="container px-4 py-3">
-            <!-- Image Showcase -->
-            <div class="row pb-3">
-              <div class="col-4">
-                <img
-                  src="/src/images/company_logo_black_white.png"
-                  alt="imageCarousel"
-                />
-              </div>
-
-              <!-- Card Info -->
-              <div class="col-8">
-                <h5 class="artTitle">Title: Title Goes Here</h5>
-                <h5 class="artId">ID: Art ID</h5>
-                <h5 class="artCreated">Created: Date here</h5>
-                <h5 class="artEnds">Ends: End Date Here</h5>
-              </div>
-            </div>
-
-            <!-- Card Description -->
-            <div class="row">
-              <h5 class="artDescriptionTitle">Description</h5>
-              <p class="artDescriptionText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                porttitor ullamcorper tempus. Vestibulum volutpat gravida justo,
-                non hendrerit ligula feugiat nec. Aenean tortor turpis,
-                tincidunt vitae orci ac, vehicula euismod nisi. Proin sagittis,
-                est in viverra rutrum, orci sapien vulputate magna, quis
-                tincidunt dui lacus sed eros. Morbi vitae metus ac diam
-                tristique dignissim.
-              </p>
-            </div>
-
-            <!-- Interaction Icons On Entry -->
-            <div class="px-3 d-flex justify-content-md-end">
-              <i class="fa-solid fa-gavel d-flex-row"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="listedArtCard mx-auto">
-          <div class="container px-4 py-3">
-            <!-- Image Showcase -->
-            <div class="row pb-3">
-              <div class="col-4">
-                <img
-                  src="/src/images/company_logo_black_white.png"
-                  alt="imageCarousel"
-                />
-              </div>
-
-              <!-- Card Info -->
-              <div class="col-8">
-                <h5 class="artTitle">Title: Title Goes Here</h5>
-                <h5 class="artId">ID: Art ID</h5>
-                <h5 class="artCreated">Created: Date here</h5>
-                <h5 class="artEnds">Ends: End Date Here</h5>
-              </div>
-            </div>
-
-            <!-- Card Description -->
-            <div class="row">
-              <h5 class="artDescriptionTitle">Description</h5>
-              <p class="artDescriptionText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                porttitor ullamcorper tempus. Vestibulum volutpat gravida justo,
-                non hendrerit ligula feugiat nec. Aenean tortor turpis,
-                tincidunt vitae orci ac, vehicula euismod nisi. Proin sagittis,
-                est in viverra rutrum, orci sapien vulputate magna, quis
-                tincidunt dui lacus sed eros. Morbi vitae metus ac diam
-                tristique dignissim.
-              </p>
-            </div>
-
-            <!-- Interaction Icons On Entry -->
-            <div class="row">
-              <i class="fa-solid fa-gavel d-flex-row"></i>
-            </div>
-          </div>
-        </div>
+        <div id="entries-container"></div>
       </div>
     </main>
 
@@ -218,7 +128,7 @@
         <!-- Logo & social media links -->
         <a href="#" class="navbar-brand col-6 m-0 p-0 d-flex align-items-center"
           ><img
-            src="/src/images/company_logo_black_white.png"
+            src="/assets/images/company_logo_black_white.png"
             width="60"
             height="60"
             alt="logo"

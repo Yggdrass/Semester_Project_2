@@ -1,4 +1,4 @@
-import { load } from "../../storage/index_storage.js";
+import { load } from "../../storage/load.js";
 import { API_BASE_URL } from "../../api/apiUrls.js";
 import { updateAvatar } from "../../api/profile/updateAvatar.js";
 

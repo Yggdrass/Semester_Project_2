@@ -1,7 +1,12 @@
+@import "../fonts/fonts";
+
 footer {
   //border: solid yellow 0.5rem;
   background-color: black;
   color: white;
+  font-family: "Lovelo-LineLight", arial, sans-serif;
+  display: flex;
+  flex-direction: row;
 }
 
 i {
@@ -11,4 +16,11 @@ i {
 
 .h2_footer {
   color: white;
+}
+
+@media (min-width: 500px) and (orientation: portrait) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
 }

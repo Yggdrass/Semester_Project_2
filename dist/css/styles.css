@@ -1,32 +1,73 @@
 @font-face {
-  font-family: "Lovelo";
-  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-family: "Lovelo-Black";
+  src: url("../../../assets/fonts/Lovelo-Black.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Lovelo";
-  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-family: "Lovelo-LineLight";
+  src: url("../../../assets/fonts/Lovelo-LineLight.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-LineBold";
+  src: url("../../../assets/fonts/Lovelo-LineBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-Black";
+  src: url("../../../assets/fonts/Lovelo-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-LineLight";
+  src: url("../../../assets/fonts/Lovelo-LineLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-LineBold";
+  src: url("../../../assets/fonts/Lovelo-LineBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 .indexPageBody {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 body {
+  border: solid lime 0.5rem;
   margin: 0;
   padding: 0;
   min-height: 100%;
-  font-family: "Lovelo", arial, sans-serif;
+  font-family: "Lovelo-Black", arial, sans-serif;
 }
 
 @font-face {
-  font-family: "Lovelo";
-  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-family: "Lovelo-Black";
+  src: url("../../../assets/fonts/Lovelo-Black.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-LineLight";
+  src: url("../../../assets/fonts/Lovelo-LineLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-LineBold";
+  src: url("../../../assets/fonts/Lovelo-LineBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 header {
   background-color: white;
   padding: 0.5rem;
+  font-family: "Lovelo-LineBold", arial, sans-serif;
 }
 
 .activeNav {
@@ -35,6 +76,10 @@ header {
 
 #img_logo {
   max-height: 5rem;
+}
+
+.navbar-collapse {
+  font-family: "Lovelo-Black", arial, sans-serif;
 }
 
 .nav-profile {
@@ -51,22 +96,56 @@ header {
   box-shadow: 0px 3px 6px black;
   padding: 0.25rem 0.5rem;
   max-width: 6.5rem;
+  font-family: "Lovelo-Black", arial, sans-serif;
 }
 
-.navbar {
-  font-family: "Lovelo", arial, sans-serif;
+.navbar-brand {
+  font-family: "Lovelo-LineBold", arial, sans-serif;
 }
 
+@media (min-width: 30em) and (orientation: portrait) {
+  .navbar-collapse {
+    display: none;
+  }
+}
 @font-face {
-  font-family: "Lovelo";
-  src: url("/src/fonts/Lovelo-Black.eot") format("eot");
+  font-family: "Lovelo-Black";
+  src: url("../../../assets/fonts/Lovelo-Black.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
 }
-/*main {
+@font-face {
+  font-family: "Lovelo-LineLight";
+  src: url("../../../assets/fonts/Lovelo-LineLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-LineBold";
+  src: url("../../../assets/fonts/Lovelo-LineBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+main {
   border: solid purple 0.3rem;
-}*/
-img {
-  max-width: 5rem;
+  min-height: 100%;
+}
+
+.hero-image {
+  max-width: 75rem;
+}
+
+.index-title {
+  font-size: 3rem;
+  font-family: "Lovelo-LineLight", arial, sans-serif;
+  color: white;
+  max-width: 100%;
+}
+
+.index-subTitle {
+  font-size: 3rem;
+  font-family: "Lovelo-LineBold", arial, sans-serif;
+  color: white;
 }
 
 #createEntryCardTitle,
@@ -91,7 +170,7 @@ textarea {
 
 .profileCard {
   color: white;
-  font-family: "Lovelo", arial, sans-serif;
+  font-family: "Lovelo-Black", arial, sans-serif;
   max-width: 800px;
 }
 
@@ -101,6 +180,15 @@ textarea {
   line-height: 2rem;
 }
 
+.profileAttribute {
+  font-family: arial, sans-serif, "Lovelo-Black";
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+/* .profileAttribute {
+  max-width: 1rem;
+} */
 .artPageSubTitle {
   max-width: 42ch;
 }
@@ -110,9 +198,19 @@ textarea {
   border-radius: 0.5rem;
 }
 
+.form-floating {
+  max-width: 50rem;
+}
+
 .fa-arrow-right-long,
 .fa-gavel {
   color: rgb(77, 234, 163);
+}
+
+.fa-arrow-right-long {
+  font-size: 5rem;
+  margin: 0;
+  padding-left: 6rem;
 }
 
 .fa-magnifying-glass,
@@ -132,7 +230,8 @@ textarea {
 .button-close,
 .artEntriesLinkButton,
 .buttonResetPassword,
-.buttonPostEntry {
+.buttonPostEntry,
+.buttonUpdateAvatar {
   border: 3px solid white;
   border-radius: 0.4rem;
   color: white;
@@ -147,7 +246,8 @@ textarea {
 .button-submit,
 .artEntriesLinkButton,
 .buttonResetPassword,
-.buttonPostEntry {
+.buttonPostEntry,
+.buttonUpdateAvatar {
   background-color: rgb(77, 234, 163);
 }
 
@@ -196,7 +296,9 @@ textarea {
   font-size: 1.5rem;
   font-family: sans-serif, Helvetica, Arial;
   font-weight: bold;
-  margin: 2rem auto;
+  margin: 1rem auto;
+  max-width: 35ch;
+  line-height: 2.5rem;
 }
 
 .artListingsContainer,
@@ -205,9 +307,8 @@ textarea {
 }
 
 .homePageTitle,
-.createEntryTitle,
-.navbar {
-  font-family: "Lovelo", arial, sans-serif;
+.createEntryTitle {
+  font-family: "Lovelo-Black", arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -229,9 +330,38 @@ textarea {
   max-width: 600px;
 }
 
+.profileDescriptionText {
+  font-size: 1.618rem;
+}
+
+.profileDescriptionTitle {
+  font-size: 2.618rem;
+}
+
+@font-face {
+  font-family: "Lovelo-Black";
+  src: url("../../../assets/fonts/Lovelo-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-LineLight";
+  src: url("../../../assets/fonts/Lovelo-LineLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lovelo-LineBold";
+  src: url("../../../assets/fonts/Lovelo-LineBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 footer {
   background-color: black;
   color: white;
+  font-family: "Lovelo-LineLight", arial, sans-serif;
+  display: flex;
+  flex-direction: row;
 }
 
 i {
@@ -243,14 +373,22 @@ i {
   color: white;
 }
 
+@media (min-width: 500px) and (orientation: portrait) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
 html {
   height: 100%;
+  font-size: 14px;
 }
 
-/*.container {
+.container {
   border: solid red 1px;
-}*/
-/*.col-1,
+}
+
+.col-1,
 .col-2,
 .col-3,
 .col-4,
@@ -263,7 +401,12 @@ html {
 .col-11,
 .col-12 {
   border: solid yellow 2px;
-}*/
+}
+
+.row {
+  border: solid rgb(0, 238, 255) 2px;
+}
+
 .modal {
   background-color: rgba(148, 131, 235, 0.6039215686);
 }
@@ -275,7 +418,7 @@ html {
 .modal,
 .modal-body {
   border: solid white 1rem;
-  font-family: "Lovelo", arial, sans-serif;
+  font-family: "Lovelo-Black", arial, sans-serif;
   text-transform: uppercase;
 }
 

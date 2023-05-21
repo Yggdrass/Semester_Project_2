@@ -1,4 +1,4 @@
-import { load } from "../../storage/index_storage.js";
+import { load } from "../../storage/load.js";
 
 const profile = load("profile");
 //console.log("Profile Stored", profile);

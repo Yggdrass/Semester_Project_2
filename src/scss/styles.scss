@@ -1,4 +1,4 @@
-@import "font/font";
+@import "fonts/fonts";
 @import "main_parts/body";
 @import "main_parts/header";
 @import "main_parts/main";
@@ -6,14 +6,15 @@
 
 html {
   height: 100%;
+  font-size: 14px;
   //border: solid yellow 0.5rem;
 }
 
-/*.container {
+.container {
   border: solid red 1px;
-}*/
+}
 
-/*.col-1,
+.col-1,
 .col-2,
 .col-3,
 .col-4,
@@ -26,7 +27,11 @@ html {
 .col-11,
 .col-12 {
   border: solid yellow 2px;
-}*/
+}
+
+.row {
+  border: solid rgb(0, 238, 255) 2px;
+}
 
 .modal {
   background-color: #9483eb9a;
@@ -39,6 +44,6 @@ html {
 .modal,
 .modal-body {
   border: solid white 1rem;
-  font-family: $font-main;
+  font-family: "Lovelo-Black", arial, sans-serif;
   text-transform: uppercase;
 }

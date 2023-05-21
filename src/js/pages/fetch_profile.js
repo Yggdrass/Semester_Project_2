@@ -58,9 +58,17 @@ fetchProfile();
 //console.log("Function :", fetchProfile);
 
 export function createProfilePage(profile) {
-  profilePageContainer.innerHTML += `<div class="artListingsContainer profileCard mx-auto mb-5">
-  <div class=" container px-4 py-3">
-    <div class="row pb-3">
+  profilePageContainer.innerHTML += `
+
+
+  <!-- Page Title -->
+  <div class="d-flex-column text-center pb-4">
+    <h1 class="homePageTitle py-2">${profile.name}'s profile page</h1>
+  </div>
+  
+  <div class="artListingsContainer profileCard mx-auto mb-5">
+  <div class=" container px-4 py-3 mx-auto">
+    <div class="row pb-3 justify-content-md-center">
       <!-- Profile Image -->
       <div class="col-4">
         <img
@@ -70,37 +78,47 @@ export function createProfilePage(profile) {
         />
       </div>
 
-      <!-- Profile Name & Tokens -->
+      <!-- Profile Name, Email & Tokens -->
       <div
-        class="col-8 d-flex-column align-items-center justify-content-md-center m-auto"
+        class="profileAttributes col-4 d-flex-column align-items-center justify-content-md-center"
       >
-        <h5 class="profileUserName p-2">Name: ${profile.name}</h5>
-        <h5 class="profileUserEmail p-2">Email: ${profile.email}</h5>
-        <h5 class="profileUserToken p-2">Tokens: ${profile.credits}</h5>
+        <div class="d-flex pb-2" >
+          <h5 class="profileAttributeTitle">Name:</h5>
+          <p class="profileAttribute pl-3">${profile.name}</p>
+        </div>
+        <div class="d-flex pb-2" >
+          <h5 class="profileAttributeTitle">Email:</h5>
+          <p class="profileAttribute pl-3">${profile.email}</p>
+        </div>
+        <div class="d-flex pb-2" >
+          <h5 class="profileAttributeTitle">Tokens:</h5>
+          <p class="profileAttribute pl-3">${profile.credits}</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Profile Description -->
-  <div class="profileDescription mt-2">
-    <h5 class="profileDescriptionTitle">Description</h5>
-    <p class="profileDescriptionText">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      porttitor ullamcorper tempus. Vestibulum volutpat gravida justo,
-      non hendrerit ligula feugiat nec. Aenean tortor turpis, tincidunt
-      vitae orci ac, vehicula euismod nisi. Proin sagittis, est in
-      viverra rutrum, orci sapien vulputate magna, quis tincidunt dui
-      lacus sed eros. Morbi vitae metus ac diam tristique dignissim.
-    </p>
-  </div>
+    <div class="row pb-3">
+      <!-- Profile Description -->
+      <div class="profileDescription pt-3 mx-auto">
+        <h5 class="profileDescriptionTitle">Description</h5>
+        <p class="profileDescriptionText">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          porttitor ullamcorper tempus. Vestibulum volutpat gravida justo,
+          non hendrerit ligula feugiat nec. Aenean tortor turpis, tincidunt
+          vitae orci ac, vehicula euismod nisi. Proin sagittis, est in
+          viverra rutrum, orci sapien vulputate magna, quis tincidunt dui
+          lacus sed eros. Morbi vitae metus ac diam tristique dignissim.
+        </p>
+      </div>
+    </div>
 
-  <!-- Reset Password Button -->
-  <div class="d-flex align-items-center justify-content-md-center py-5">
-    <h5 class="resetPasswordTitle px-3">change password</h5>
-    <button class="buttonResetPassword px-3">reset</button>
-  </div>
-</div>
-</div>
+    <div class="row pb-3">
+      <!-- Reset Password Button -->
+      <div class="d-flex align-items-center justify-content-md-center py-5">
+        <h5 class="resetPasswordTitle px-3">change password</h5>
+        <button class="buttonResetPassword px-3">reset</button>
+      </div>
+    </div>
 
 `;
 }
@@ -111,12 +129,12 @@ export function createEntryForm() {
       <div id="ceateEntryContainer" class="artListingsContainer d-flex-column mx-auto mt-3">
         <!-- Create Entry Card -->
         <div class="createEntryCard mx-auto mb-5">
-          <div class="container px-4 py-3">
-            <div class="row pb-3">
-              <h3 class="createEntryCardTitle">create entry</h3>
+          <div class="container mx-auto px-4 py-3">
+            <div class="row mx-auto pb-3">
+              <h3 class="createEntryCardTitle text-center">create entry</h3>
             </div>
 
-            <div class="row pb-3">
+            <div class="mx-auto pt-4 col-6 pb-3">
               <form id="createEntry">
                 <!-- Entry Title -->
                 <div class="mb-3">
@@ -129,22 +147,20 @@ export function createEntryForm() {
                   />
                 </div>
 
+
                 <!-- Entry End Date -->
-                <div class="createEndDate mb-3 pxl-3 pt-2">
-                  <label for="createEndDate" class="form-label">Date End</label>
-                  <div class="d-flex">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="createEndDate"
-                      placeholder="../../...."
-                    />
-                    <i class="fa-solid fa-calendar-days mx-4"></i>
+                <form class="col-6">
+                  <label for="date" class="col-1 col-form-label">Date</label>
+                  <div class="col-5">
+                    <div class="input-group date" id="datepicker">
+                      <input type="date" class="form-control" id="date"/>  
+                    </div>
                   </div>
-                </div>
+                </form>
+                
 
                 <!-- Entry Media Gallery -->
-                <div class="mb-3 pt-2">
+                <div class="col-6 mb-3 pt-2">
                   <label for="formEntryGallery" class="form-label"
                     >Media gallery</label
                   >

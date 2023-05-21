@@ -41,7 +41,7 @@
             href="/index.html"
             class="navbar-brand col-4 m-0 p-0 d-flex align-items-center"
             ><img
-              src="/src/images/company_logo_white_black.png"
+              src="/assets/images/company_logo_white_black.png"
               width="60"
               height="60"
               alt="Company Logo, an A with hovel base underneath"
@@ -111,22 +111,25 @@
     <main class="homePageMain my-5">
       <!-- Main content -->
 
-      <!-- Page Title -->
       <div id="profile-container"></div>
 
       <!-- Update Avatar -->
       <div
         id="updateAvatar-container"
-        class="artListingsContainer"
+        class="artListingsContainer row pb-3 mx-auto py-3"
         method="put"
       >
         <div>
-          <form id="updateAvatarForm" method="put">
+          <form
+            class="d-flex justify-content-md-around"
+            id="updateAvatarForm"
+            method="put"
+          >
             <div class="form-floating">
               <input
                 required
                 type="url"
-                class="form-control"
+                class="col-8 form-control"
                 id="avatar"
                 name="updateAvatar"
                 placeholder="Avatar URL"
@@ -148,11 +151,11 @@
     </main>
 
     <footer class="p-0">
-      <div class="container d-flex p-0 align-items-center">
+      <div class="container p-0 align-items-center">
         <!-- Logo & social media links -->
         <a href="#" class="navbar-brand col-6 m-0 p-0 d-flex align-items-center"
           ><img
-            src="/src/images/company_logo_black_white.png"
+            src="/assets/images/company_logo_black_white.png"
             width="60"
             height="60"
             alt="Company Logo, an A with hovel base underneath"
