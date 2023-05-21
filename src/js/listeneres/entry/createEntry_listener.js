@@ -1,10 +1,9 @@
-import { loginUser } from "../../api/auth/login.js";
 import { API_CREATE_ENTRY_URL } from "../../api/apiUrls.js";
 import { createEntry } from "../../api/entry/entry_create.js";
 //import { load } from "../storage/load.js";
 
 const createEntryURL = `${API_CREATE_ENTRY_URL}`;
-//console.log("createEntryURL :", createEntryURL);
+console.log("createEntryURL :", createEntryURL);
 
 export async function createEntryListener() {
   const createEntryForm = document.querySelector("#createEntry");
@@ -19,8 +18,7 @@ export async function createEntryListener() {
       console.log("userToLogin :", entryToCreate);
 
       // Sends to the API
-      loginUser(createEntryURL, entryToCreate);
-      createEntry();
+      createEntry(createEntryURL, entryToCreate);
       console.log("Function :", createEntry);
     });
   }

@@ -1,1 +1,1 @@
-export * from "./update_avatar_listener.js";
+//export * from "./update_avatar_listener.js";

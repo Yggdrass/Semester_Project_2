@@ -130,18 +130,21 @@ export function createEntryForm() {
                 </div>
 
                 <!-- Entry End Date -->
-                <div class="createEndDate mb-3 pxl-3 pt-2">
-                  <label for="createEndDate" class="form-label">Date End</label>
-                  <div class="d-flex">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="createEndDate"
-                      placeholder="../../...."
-                    />
-                    <i class="fa-solid fa-calendar-days mx-4"></i>
+
+                <form class="row">
+                  <label for="date" class="col-1 col-form-label">Date</label>
+                  <div class="col-5">
+                    <div class="input-group date" id="datepicker">
+                      <input type="date" class="form-control" id="date"/>
+                      <span class="input-group-append">
+                        <span class="input-group-text bg-light d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+                    </div>
                   </div>
-                </div>
+                </form>
+                
 
                 <!-- Entry Media Gallery -->
                 <div class="mb-3 pt-2">

@@ -19,6 +19,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/js/index.js" defer type="module"></script>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -117,99 +118,29 @@
         </h2>
       </div>
 
+      <!-- Search Bar -->
+      <div
+        class="artListingsContainer searchListings d-flex py-5 mt-3 align-items-center justify-content-md-center"
+        id="searchEntries"
+      >
+        <h3 class="searchTitle m-0">Search for Art</h3>
+        <i class="fa-solid fa-magnifying-glass mx-4"></i>
+        <form class="d-flex">
+          <label for="search-entries"></label>
+          <input
+            class="form-control searchListingsInput p-1 ml-2"
+            id="search-entries"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+
       <!-- Art Listings Container -->
       <div class="artListingsContainer d-flex-column mx-auto mt-3">
-        <!-- Search Bar -->
-        <div
-          class="searchListings d-flex py-5 mt-3 align-items-center justify-content-md-center"
-        >
-          <h3 class="searchTitle m-0">Search for Art</h3>
-          <i class="fa-solid fa-magnifying-glass mx-4"></i>
-          <input type="text" class="searchListingsInput p-1 ml-2" />
-        </div>
-
-        <!-- Art Listing Card -->
-        <div class="listedArtCard mx-auto mb-5">
-          <div class="container px-4 py-3">
-            <!-- Image Showcase -->
-            <div class="row pb-3">
-              <div class="col-4">
-                <img
-                  src="/src/images/company_logo_black_white.png"
-                  alt="imageCarousel"
-                />
-              </div>
-
-              <!-- Card Info -->
-              <div class="col-8">
-                <h5 class="artTitle">Title: Title Goes Here</h5>
-                <h5 class="artId">ID: Art ID</h5>
-                <h5 class="artCreated">Created: Date here</h5>
-                <h5 class="artEnds">Ends: End Date Here</h5>
-              </div>
-            </div>
-
-            <!-- Card Description -->
-            <div class="row">
-              <h5 class="artDescriptionTitle">Description</h5>
-              <p class="artDescriptionText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                porttitor ullamcorper tempus. Vestibulum volutpat gravida justo,
-                non hendrerit ligula feugiat nec. Aenean tortor turpis,
-                tincidunt vitae orci ac, vehicula euismod nisi. Proin sagittis,
-                est in viverra rutrum, orci sapien vulputate magna, quis
-                tincidunt dui lacus sed eros. Morbi vitae metus ac diam
-                tristique dignissim.
-              </p>
-            </div>
-
-            <!-- Interaction Icons On Entry -->
-            <div class="px-3 d-flex justify-content-md-end">
-              <i class="fa-solid fa-gavel d-flex-row"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="listedArtCard mx-auto">
-          <div class="container px-4 py-3">
-            <!-- Image Showcase -->
-            <div class="row pb-3">
-              <div class="col-4">
-                <img
-                  src="/src/images/company_logo_black_white.png"
-                  alt="imageCarousel"
-                />
-              </div>
-
-              <!-- Card Info -->
-              <div class="col-8">
-                <h5 class="artTitle">Title: Title Goes Here</h5>
-                <h5 class="artId">ID: Art ID</h5>
-                <h5 class="artCreated">Created: Date here</h5>
-                <h5 class="artEnds">Ends: End Date Here</h5>
-              </div>
-            </div>
-
-            <!-- Card Description -->
-            <div class="row">
-              <h5 class="artDescriptionTitle">Description</h5>
-              <p class="artDescriptionText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                porttitor ullamcorper tempus. Vestibulum volutpat gravida justo,
-                non hendrerit ligula feugiat nec. Aenean tortor turpis,
-                tincidunt vitae orci ac, vehicula euismod nisi. Proin sagittis,
-                est in viverra rutrum, orci sapien vulputate magna, quis
-                tincidunt dui lacus sed eros. Morbi vitae metus ac diam
-                tristique dignissim.
-              </p>
-            </div>
-
-            <!-- Interaction Icons On Entry -->
-            <div class="row">
-              <i class="fa-solid fa-gavel d-flex-row"></i>
-            </div>
-          </div>
-        </div>
+        <div id="entries-container"></div>
       </div>
     </main>
 
