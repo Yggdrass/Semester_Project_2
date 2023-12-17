@@ -4,7 +4,7 @@ This is my Semester Project 2. A Front End assignment for users to Register, Log
 # Goal
 To take the skills learned over the past three semesters and create an auction website.
 
-# Status Badges
+
 
 
 # Brief
