@@ -1,10 +1,13 @@
-# Semester Project 2 - "Art Auctions"
-This is my Semester Project 2. A Front End assignment for users to Register, Login, create an entry and bid on others entry.
+# ART AUCTIONS
+
+<img src="art_listings_home.png" width="1280"/>
+
+
 
 # Goal
+
+This is my Semester Project 2. A Front End assignment for users to Register, Login, create an entry and bid on others entry.
 To take the skills learned over the past three semesters and create an auction website.
-
-
 
 
 # Brief
