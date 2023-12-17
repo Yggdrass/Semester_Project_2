@@ -1,5 +1,5 @@
 # Semester Project 2 - "Art Auctions"
-This is my Semester Project 2. A Front End assignment for users to Register, Login, create an entry and bid on others.
+This is my Semester Project 2. A Front End assignment for users to Register, Login, create an entry and bid on others entry.
 
 # Goal
 To take the skills learned over the past three semesters and create an auction website.
@@ -91,7 +91,7 @@ Gantt chart for the projects process.
 API: https://docs.noroff.dev/auctionhouse-endpoints/authentication
 We used this API provided from the school.
 
-# Process
+## Process
 
 First i needed to establish the target audience, the type of auction site and from there decide on the design for the logo, colours etc, so that they would meet the target audience.
 I started first to design a style guide and a protype in adobe XD. I chose to target people in the ages 25-45 that likes quite modern and expressive art. There fore I decided to go for a minimalistic wbsite that made the user focus quickly and make it easier for them to create a profile, login and create or bid on an entry as quick as possible. 
@@ -106,3 +106,13 @@ I created a function that makes it possible for a logged in user to type in info
 
 As a small note in the end:
 I have not been able to use Ghantchart as much, since it is both new to me and I prefer o use the Trello board instead. Because of my health I have been focusing on using the time to finish the project using the Trello board and there fore I have forgot to use ghantt chart. I will instead set up the chart to display what I would do if I used it.
+
+
+##Running the project
+
+First you click on the green code-button and then open the project in GitHub-desktop. Clone it to your local device and then open it in VS-code or your coding software of choice. Type and install "npm i" in the terminal, then open the project locally in your browser by enter "npm run watch" and then press the "Go live" button below the terminal (in VS code). The project will now open as a new tab in your web browser. Now you can freely explore the website.
+
+
+##Contact
+
+If you want to ask me any questions or otherwise want to get in touch, you can contact me on my email: audunroald@gmail.com.
